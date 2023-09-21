@@ -1,0 +1,416 @@
+{
+    "grcs": {
+        "Aljunied": [
+            {
+                "name": "Mr Gerald Giam Yean Song",
+                "email": "gerald.giam@wp.sg"
+            },
+            {
+                "name": "Ms Sylvia Lim",
+                "email": "sylvia.lim@wp.sg"
+            },
+            {
+                "name": "Mr Muhamad Faisal Bin Abdul Manap",
+                "email": "faisal.manap@wp.sg"
+            },
+            {
+                "name": "Mr Pritam Singh",
+                "email": "pritam.singh@wp.sg"
+            }
+        ],
+        "Ang Mo Kio": [
+            {
+                "name": "Mr Darryl David",
+                "email": "Darryl.David@pap.org.sg"
+            },
+            {
+                "name": "Mr Gan Thiam Poh",
+                "email": "gan.thiam.poh@amktc.org.sg"
+            },
+            {
+                "name": "Mr Lee Hsien Loong",
+                "email": "teck.ghee@pap.org.sg"
+            },
+            {
+                "name": "Ms Nadia Ahmad Samdin",
+                "email": "chengsan-seletar.mps@pap.org.sg"
+            },
+            {
+                "name": "Ms Ng Ling Ling",
+                "email": "jalan.kayu.mps@pap.org.sg"
+            }
+        ],
+        "Bishan-Toa Payoh": [
+            {
+                "name": "Mr Chee Hong Tat",
+                "email": "chee_hong_tat@mot.gov.sg"
+            },
+            {
+                "name": "Dr Ng Eng Hen",
+                "email": "ng.enghen@yahoo.com.sg"
+            },
+            {
+                "name": "Mr Chong Kee Hiong",
+                "email": "ChongKeeHiong@outlook.com"
+            },
+            {
+                "name": "Mr Saktiandi Supaat",
+                "email": "TPEast@gmail.com"
+            }
+        ],
+        "Chua Chu Kang": [
+            {
+                "name": "Mr Gan Kim Yong",
+                "email": "gan_kim_yong@mti.gov.sg"
+            },
+            {
+                "name": "Ms Low Yen Ling",
+                "email": "yenling@bukitgombak.org.sg"
+            },
+            {
+                "name": "Mr Don Wee",
+                "email": "don.wee@pap.org.sg"
+            },
+            {
+                "name": "Mr Zhulkarnain Abdul Rahim",
+                "email": "mp@keathong.sg"
+            }
+        ],
+        "East Coast": [
+            {
+                "name": "Miss Cheryl Chan Wei Ling",
+                "email": "fengshan@pap.org.sg"
+            },
+            {
+                "name": "Mr Heng Swee Keat",
+                "email": "heng_swee_keat@pmo.gov.sg"
+            },
+            {
+                "name": "Dr Mohamad Maliki Bin Osman",
+                "email": "siglap@pap.org.sg"
+            },
+            {
+                "name": "Ms Jessica Tan Soon Neo",
+                "email": "my.mp@changisimei.sg"
+            },
+            {
+                "name": "Mr Tan Kiat How",
+                "email": "kg.Chai.Chee.mps@pap.org.sg"
+            }
+        ],
+        "Holland-Bukit Timah": [
+            {
+                "name": "Mr Edward Chia Bing Hui",
+                "email": "edwardchiabinghui@gmail.com"
+            },
+            {
+                "name": "Mr Christopher de Souza",
+                "email": "mps@ulupandan.sg"
+            },
+            {
+                "name": "Ms Sim Ann",
+                "email": "bukit.timah@pap.org.sg"
+            },
+            {
+                "name": "Dr Vivian Balakrishnan",
+                "email": "cashew.mps@pap.org.sg"
+            }
+        ],
+        "Jalan Besar": [
+            {
+                "name": "Mrs Josephine Teo",
+                "email": "kaks.mps@pap.org.sg"
+            },
+            {
+                "name": "Ms Denise Phua Lay Peng",
+                "email": "dphua@pathlight.org.sg"
+            },
+            {
+                "name": "Dr Wan Rizal",
+                "email": "Kolam.Ayer@pap.org.sg"
+            },
+            {
+                "name": "Mr Heng Chee How",
+                "email": "hengcheehow@mindef.gov.sg"
+            }
+        ],
+        "Jurong": [
+            {
+                "name": "Mr Shawn Huang Wei Zhong",
+                "email": "Jurong.Spring@pap.org.sg"
+            },
+            {
+                "name": "Ms Rahayu Mahzam",
+                "email": "Rahayu.Mahzam@pap.org.sg"
+            },
+            {
+                "name": "Dr Tan Wu Meng",
+                "email": "Dr.Tan.W.M@gmail.com"
+            },
+            {
+                "name": "Mr Xie Yao Quan",
+                "email": "Jurong.Central.mps@pap.org.sg"
+            }
+        ],
+        "Marine Parade": [
+            {
+                "name": "Mr Mohd Fahmi Bin Aliman",
+                "email": "pap.gs.mps@gmail.com"
+            },
+            {
+                "name": "Mr Seah Kian Peng",
+                "email": "braddell.heights.mps@pap.org.sg"
+            },
+            {
+                "name": "Dr Tan See Leng",
+                "email": "Marine.Parade@pap.org.sg"
+            },
+            {
+                "name": "Mr Edwin Tong Chun Fai",
+                "email": "pap.kcc@gmail.com"
+            }
+        ],
+        "Marsiling-Yew Tee": [
+            {
+                "name": "Ms Hany Soh",
+                "email": "Woodgrove.mps@pap.org.sg"
+            },
+            {
+                "name": "Mr Lawrence Wong",
+                "email": "lawrence_wong@mof.gov.sg"
+            },
+            {
+                "name": "Mr Alex Yam Ziming",
+                "email": "yew.tee.mps@pap.org.sg"
+            },
+            {
+                "name": "Mr Zaqy Mohamad",
+                "email": "mp@marsiling.sg"
+            }
+        ],
+        "Nee Soon": [
+            {
+                "name": "Mr Derrick Goh",
+                "email": "derrickgohsh.mps@gmail.com"
+            },
+            {
+                "name": "Assoc Prof Dr Muhammad Faishal Ibrahim",
+                "email": "MPS.NSC@gmail.com"
+            },
+            {
+                "name": "Mr Louis Ng Kok Kwang",
+                "email": "Ng.Louis@pap.org.sg"
+            },
+            {
+                "name": "Mr K Shanmugam",
+                "email": "chong.pang.mps@pap.org.sg"
+            },
+            {
+                "name": "Ms Carrie Tan",
+                "email": "carriehmtan@gmail.com"
+            }
+        ],
+        "Pasir Ris-Punggol": [
+            {
+                "name": "Dr Janil Puthucheary",
+                "email": "janil.puthucheary@pap.org.sg"
+            },
+            {
+                "name": "Mr Sharael Taha",
+                "email": "Pasir.Ris.East.MPS@pap.org.sg"
+            },
+            {
+                "name": "Mr Desmond Tan",
+                "email": "Pasir.Ris.Ctrl.mps@pap.org.sg"
+            },
+            {
+                "name": "Mr Teo Chee Hean",
+                "email": "Pasir.Ris.West.mps@pap.org.sg"
+            },
+            {
+                "name": "Ms Yeo Wan Ling",
+                "email": "punggol.shore.mps@pap.org.sg"
+            }
+        ],
+        "Sembawang": [
+            {
+                "name": "Dr Lim Wee Kiak",
+                "email": "limweekiak@gmail.com"
+            },
+            {
+                "name": "Ms Mariam Jaafar",
+                "email": "Woodlands@pap.org.sg"
+            },
+            {
+                "name": "Mr Ong Ye Kung",
+                "email": "ongyekung@gmail.com"
+            },
+            {
+                "name": "Ms Poh Li San",
+                "email": "sembawang.west.mps@pap.org.sg"
+            },
+            {
+                "name": "Mr Vikram Nair",
+                "email": "admiralty.mps@pap.org.sg"
+            }
+        ],
+        "Sengkang": [
+            {
+                "name": "Mr Chua Kheng Wee Louis",
+                "email": "khengwee.chua@wp.sg"
+            },
+            {
+                "name": "Ms He Ting Ru",
+                "email": "tingru.he@wp.sg"
+            },
+            {
+                "name": "Assoc Prof Jamus Jerome Lim",
+                "email": "jamus.lim@wp.sg"
+            }
+        ],
+        "Tampines": [
+            {
+                "name": "Mr Baey Yam Keng",
+                "email": "ykbaey@gmail.com"
+            },
+            {
+                "name": "Mr Desmond Choo",
+                "email": "Desmond.Choo@pap.org.sg"
+            },
+            {
+                "name": "Dr Koh Poh Koon",
+                "email": "tampines.central.mps@pap.org.sg"
+            },
+            {
+                "name": "Mr Masagos Zulkifli Bin Masagos Mohamad",
+                "email": "masagos.zulkifli@pap.org.sg"
+            }
+        ],
+        "Tanjong Pagar": [
+            {
+                "name": "Ms Joan Pereira",
+                "email": "joan.pereira@pap.org.sg"
+            },
+            {
+                "name": "Mr Alvin Tan",
+                "email": "moca@pap.org.sg"
+            },
+            {
+                "name": "Mr Chan Chun Sing",
+                "email": "buona.vista.mps@pap.org.sg"
+            },
+            {
+                "name": "Mr Eric Chua Swee Leong",
+                "email": "Queenstown.MPS@pap.org.sg"
+            },
+            {
+                "name": "Indranee Thurai Rajah",
+                "email": "TPTB@pap.org.sg"
+            }
+        ],
+        "West Coast": [
+            {
+                "name": "Mr Ang Wei Neng",
+                "email": "weineng.ang@gmail.com"
+            },
+            {
+                "name": "Ms Rachel Ong Sin Yen",
+                "email": "Telok.Blangah@pap.org.sg, rachel.ong@pap.org.sg"
+            },
+            {
+                "name": "Ms Foo Mee Har",
+                "email": "ayer.rajah-gp.mps@pap.org.sg"
+            },
+            {
+                "name": "Mr Desmond Lee",
+                "email": "Boon.Lay@pap.org.sg"
+            }
+        ]
+    },
+    "smcs": {
+        "Bukit Batok": [
+            {
+                "name": "Mr Murali Pillai SC",
+                "email": "mpsbukitbatok@gmail.com"
+            }
+        ],
+        "Bukit Panjang": [
+            {
+                "name": "Mr Liang Eng Hwa",
+                "email": "liang_eng_hwa@singnet.com.sg"
+            }
+        ],
+        "Hong Kah North": [
+            {
+                "name": "Dr Amy Khor Lean Suan",
+                "email": "mpshkn@singnet.com.sg"
+            }
+        ],
+        "Hougang": [
+            {
+                "name": "Mr Dennis Tan Lip Fong",
+                "email": "dennis.tan@wp.sg"
+            }
+        ],
+        "Kebun Baru": [
+            {
+                "name": "Mr Kwek Hian Chuan Henry",
+                "email": "henryforkebunbaru@gmail.com"
+            }
+        ],
+        "MacPherson": [
+            {
+                "name": "Ms Tin Pei Ling",
+                "email": "tinpeiling@gmail.com"
+            }
+        ],
+        "Marymount": [
+            {
+                "name": "Ms Gan Siow Huang",
+                "email": "mps.marymount@gmail.com"
+            }
+        ],
+        "Mountbatten": [
+            {
+                "name": "Mr Lim Biow Chuan",
+                "email": "lbclaw01@gmail.com"
+            }
+        ],
+        "Pioneer": [
+            {
+                "name": "Mr Patrick Tay Teck Guan",
+                "email": "pioneer@pap.org.sg"
+            }
+        ],
+        "Potong Pasir": [
+            {
+                "name": "Mr Sitoh Yih Pin",
+                "email": "sitoh@sg.cla-ts.com"
+            }
+        ],
+        "Punggol West": [
+            {
+                "name": "Ms Sun Xueling",
+                "email": "Sun.Xueling@pap.org.sg"
+            }
+        ],
+        "Radin Mas": [
+            {
+                "name": "Mr Melvin Yong Yik Chye",
+                "email": "Melvin.Yong@pap.org.sg"
+            }
+        ],
+        "Yio Chu Kang": [
+            {
+                "name": "Mr Yip Hon Weng",
+                "email": "yck.mps@pap.org.sg"
+            }
+        ],
+        "Yuhua": [
+            {
+                "name": "Ms Grace Fu Hai Yien",
+                "email": "yhmps@yahoo.com.sg"
+            }
+        ]
+    }
+}

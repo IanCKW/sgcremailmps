@@ -1,0 +1,399 @@
+/* ==================== */
+/* GLOBAL STYLES        */
+/* ==================== */
+
+:root {
+  --lightblue: #57aec1;
+  --blue: #3e82a7;
+  --darkblue: #2b5988 ;
+  --maroon:#aa2f31;
+  --offwhite: #f7f7f2;
+  --lightoffwhite: #fcfcfb;
+  --darkgrey: #1c1e23;
+}
+
+
+@font-face {
+  font-family: 'Edo';
+  src: url('../assets/fonts/Edo.ttf') format('truetype');
+}
+
+@media (max-width: 700px) {
+
+  #content {
+    width: 95%;
+  }
+
+  .footer {
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding-left: 15px; 
+  }
+  
+  .footer-content a {
+    margin-top: 5px; 
+  }
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: var(--offwhite);
+}
+
+body, html {
+  height: 100%;
+}
+
+/* FOR FOOTER */
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* FOR FOOTER */
+#content {
+  flex: 1;
+}
+
+h1 {
+  font-family: Edo;
+  font-size: 40px;
+  color: white; 
+  position: relative; 
+  z-index: 2; 
+  text-align: center; 
+  transform-style: preserve-3d;
+}
+
+/* LAYERED STYLING */
+h1::before {
+  content: attr(data-text);
+  color: var(--maroon);
+  position: absolute; 
+  top: 5px;
+  left: 50%;  /* This will move the pseudo-element's left edge to the center of h1 */
+  width: 100%;
+  text-align: inherit; /* Inherit the text alignment from the parent h1 */
+  z-index: 1; 
+  transform: translateX(-50%) translateX(5px) translateZ(-1px);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15em;
+}
+
+
+/* ==================== */
+/* HEADER COMPONENT     */
+/* ==================== */
+
+header {
+  position: relative;
+  align-items: center;
+  padding: 0px;
+  background-image: linear-gradient(to bottom right, var(--lightblue)
+  , var(--darkblue)  );
+  border-bottom: var(--maroon) 
+   10px;
+
+}
+
+header > h1, header  > h1::before {
+  padding: 20px;
+  padding-bottom: 45px;
+  padding-top: 0;
+}
+
+header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sgcrLogo {
+  width: 3em;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+  margin-left: 0;
+}
+
+#inner_top {
+  font-family: 'Open Sans';
+  height: 35px;
+  color: white;
+  position: relative;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  padding:10px 10px 0px 10px;
+}
+
+#inner_top span {
+  font-size: 16px;
+  display: flex;
+  align-items: flex-end; /* aligns to the bottom */
+}
+
+/* ==================== */ 
+/* CONTENT              */
+/* ==================== */
+
+#content {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: 1000;
+  font-size: 16px;
+  margin: 15px 0 10px 0px;
+}
+
+h3 {
+  text-align: justify;
+  display: inline-block;
+  font-family: edo;
+  color: #aa2f31;
+  font-size: 30px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+#mail_img {
+  padding-bottom: 20px;
+}
+
+/* ==================== */
+/* CALLOUT  */
+/* ==================== */
+
+.callout {
+  padding: 15px;
+  margin: 20px 0;
+  border-left: 4px solid var(--maroon);
+  background-color: var(--lightoffwhite);
+  font-style: italic;
+  position: relative; 
+}
+
+.callout span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: normal; 
+  text-align: right;
+}
+
+
+/* ====================== */
+/* BUTTON LIST COMPONENT  */
+/* ====================== */
+
+#button_list {
+  display: flex;
+  flex-direction: column;
+}
+
+button, 
+a.external-link-button {
+  
+  margin: 0px auto 20px;
+  text-decoration: none;
+  color: white !important;
+  padding: 12px 16px !important;
+  background-color: var(--blue);
+  box-shadow: 0 6px 0 0 var(--darkblue);
+  border: none !important;
+  border-radius: 8px;
+  transition: all 0.05s;
+  -o-transition: all 0.05s;
+  -moz-transition: all 0.05s;
+  -webkit-transition: all 0.05s;
+}
+
+button {
+  transition: transform 0.05s, box-shadow 0.05s;
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 0 var(--darkblue);
+}
+
+button:hover, 
+a.external-link-button:hover {
+  background-color: var(--lightblue);
+}
+
+/* ==================== */
+/* SURVEY COMPONENT     */
+/* ==================== */
+
+#survey h1, #survey h2 {
+  text-align: left;
+}
+
+#bottom_buttons {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+#name_textarea {
+  height: 2em;
+}
+
+textarea {
+  height: 10em;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.Collapsible {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+ul {
+  padding: 0px;
+}
+
+.top-margin-25px {
+  margin-top: 25px;
+}
+
+/* ===================== */
+/* POLICY GROUP COMPONENT */
+/* ===================== */
+
+.example_li {
+  list-style-type: none; /* Turn off default bullets */
+  padding-bottom: 3px;
+  position: relative; 
+  padding-left: 1.5em;
+  color: var(--darkgrey);
+  font-weight: 100;
+}
+
+.example_li::before {
+  content: '\2022'; /* Unicode character for bullet */
+  color: var(--maroon);
+  position: absolute;
+  left: 0;
+  top: 12px;
+  transform: translateY(-50%); /* Center align the bullet vertically with the text */
+  font-size: 1.2em; 
+}
+
+
+.group-name{
+  font-family: edo;
+  font-size: 30px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3px;
+}
+
+input[type="checkbox"] {
+  margin: 5px 8px 0 0;
+}
+
+label {
+  flex: 1;
+}
+
+input[type="checkbox"]:checked + label {
+  color: var(--maroon);
+}
+
+input[type="checkbox"]:checked + label::after {
+  background-color: var(--blue);
+}
+
+/* ===================== */
+/* EMAIL DRAFT COMPONENT */
+/* ===================== */
+
+textarea.email-draft {
+  height: 35em;
+  font-size: calc(1em - 2px);
+}
+
+div.email-draft {
+  padding-top: 3%;
+}
+
+
+
+/* ==================== */
+/* FOOTER               */
+/* ==================== */
+
+.footer {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: var(--darkgrey);
+  color: grey;
+  width: 100%;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content a {
+  margin:0px 5px 0px 5px;
+  color: lightgray;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-content a:hover {
+  color: #356ea8;
+}
+
+.footer-copyright { 
+  margin-top: 15px; 
+  text-align: center;
+  width: 100%; 
+}
+
+
