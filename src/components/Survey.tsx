@@ -154,7 +154,7 @@ const Survey: React.FC<SurveyProps> = ({ onSubmit, onBack }) => {
       ></textarea>
 
       <div id="bottom_buttons">
-        <button onClick={onBack}>⬅ Back</button>
+        <button onClick={onBack}>↻ Back</button>
         <button onClick={handleSubmit}>Draft Email</button>
       </div>
     </div>
