@@ -12,7 +12,6 @@
   --darkgrey: #1c1e23;
 }
 
-
 @font-face {
   font-family: 'Edo';
   src: url('../assets/fonts/edo.ttf') format('truetype');
@@ -83,6 +82,9 @@ img{
   width: 15em;
 }
 
+.no-emoji {
+  font-feature-settings: "emoji" 0;
+}
 
 /* ==================== */
 /* HEADER COMPONENT     */
@@ -377,6 +379,8 @@ div.email-draft {
   text-align: center;
   width: 100%; 
 }
+
+
 
 @media (max-width: 768px) {
 
