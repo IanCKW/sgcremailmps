@@ -60,7 +60,7 @@ const Survey: React.FC<SurveyProps> = ({ onSubmit, onBack }) => {
 
   return (
     <div id="survey">
-      <button onClick={onBack}>⬅ Back</button>
+      <button onClick={onBack}>↻ Back</button>
       <h2>
         Share with your MP who you are, and why you care about the climate
         crisis!

@@ -55,7 +55,7 @@ const LandingPage: React.FC = () => {
       case Phases.SMC: {
         return (
           <ButtonList
-            buttonNames={[...smcs, "⬅ Back"]}
+            buttonNames={[...smcs, "↻ Back"]}
             buttonFuncs={[
               ...smcs.map((smc) => () => {
                 setHasClicked(Phases.SURVEY);
@@ -70,7 +70,7 @@ const LandingPage: React.FC = () => {
       case Phases.GRC: {
         return (
           <ButtonList
-            buttonNames={[...grcs, "⬅ Back"]}
+            buttonNames={[...grcs, "↻ Back"]}
             buttonFuncs={[
               ...grcs.map((grc) => () => {
                 setHasClicked(Phases.SURVEY);
