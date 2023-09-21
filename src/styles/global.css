@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'Edo';
-  src: url('../assets/fonts/Edo.ttf') format('truetype');
+  src: url('../assets/fonts/edo.ttf') format('truetype');
 }
 
 @media (max-width: 700px) {
