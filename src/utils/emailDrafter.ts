@@ -23,7 +23,8 @@ I am [NAME], a resident of ${constituency}, and I write as part of SG Climate Ra
 
     if (introText) {
     message += `
-${introText}`;
+${introText}
+`;
     }
 
     message += `
@@ -40,11 +41,11 @@ ${policyChangesList}
 
     if (reason) {
     message += `
-${reason}`;
+${reason}
+`;
     }
 
     message += `
-    
 I look forward to seeing a greater push for bold and inclusive climate policies in Parliament.
 
 SG Climate Rally’s full policy recommendations can be viewed here: https://tinyurl.com/sgcr-policy23
