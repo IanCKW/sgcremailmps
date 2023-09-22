@@ -160,7 +160,7 @@ h3 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
   margin-bottom: 10px;
 }
@@ -238,6 +238,17 @@ a.external-link-button:hover {
 #survey h1, #survey h2 {
   text-align: left;
 }
+
+.privacy-statement {
+  font-size: 14px;
+  font-style: italic;
+  color: var(--darkgrey);
+  margin: 20px 0;
+
+
+  
+}
+
 
 #bottom_buttons {
   position: relative;
@@ -326,9 +337,17 @@ input[type="checkbox"]:checked + label::after {
 /* EMAIL DRAFT COMPONENT */
 /* ===================== */
 
+.email-draft > textarea {
+  margin-bottom: 0px;
+}
+
 textarea.email-draft {
-  height: 35em;
+  height: 35em;   
   font-size: calc(1em - 2px);
+}
+
+#recipients-textarea, #subject-textarea {
+  height: 2em ;
 }
 
 div.email-draft {

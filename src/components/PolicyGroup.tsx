@@ -23,6 +23,7 @@ const PolicyGroup: React.FC<PolicyGroupProps> = ({
                 id={groupName + index.toString()}
                 value={text}
                 onChange={onCheckboxChange}
+                defaultChecked={false}
               />
               <label htmlFor={groupName + index.toString()}>{text}</label>
             </div>

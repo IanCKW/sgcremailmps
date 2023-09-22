@@ -33,10 +33,15 @@ const Survey: React.FC<SurveyProps> = ({ onSubmit, onBack }) => {
   };
   const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { value, checked } = e.target;
+    if (checked && surveyData.policyChanges.length >= 3) {
+      alert("You have chosen more than 3 options");
+      e.target.checked = false; // Uncheck the checkbox
+      return;
+    }
     setSurveyData((prevData) => {
       const chosenPolicies = checked
         ? [...prevData.policyChanges, value]
-        : prevData.policyChanges.filter((policy) => policy != value);
+        : prevData.policyChanges.filter((policy) => policy !== value);
       return { ...prevData, policyChanges: chosenPolicies };
     });
   };
@@ -44,7 +49,6 @@ const Survey: React.FC<SurveyProps> = ({ onSubmit, onBack }) => {
   const [surveyData, setSurveyData] = useState<SurveyData>({
     introText: "",
     policyChanges: [],
-    elaboration: "",
     reason: "",
     name: "",
   });
@@ -58,9 +62,27 @@ const Survey: React.FC<SurveyProps> = ({ onSubmit, onBack }) => {
     onSubmit(surveyData);
   };
 
+  const numPolicies: number = Object.values(policyData).reduce(
+    (sum: number, curr: string[]) => sum + curr.length,
+    0
+  );
   return (
     <div id="survey">
-      <button onClick={onBack}>↻ Back</button>
+      <div id="button_list">
+        <button onClick={onBack}>↻ Back</button>{" "}
+      </div>
+      <p className="privacy-statement">
+        Privacy statement: SG Climate Rally does not store any of your private
+        data, nor the contents of your email.
+      </p>
+      <h2>Name you'd like to sign off with:</h2>
+      <textarea
+        name="name"
+        id="name_textarea"
+        placeholder="Name"
+        onChange={handleInputChange}
+        autoComplete="[YOUR NAME]"
+      ></textarea>
       <h2>
         Share with your MP who you are, and why you care about the climate
         crisis!
@@ -69,28 +91,28 @@ const Survey: React.FC<SurveyProps> = ({ onSubmit, onBack }) => {
         <>
           <ul></ul>
           <li className="example_li">
-            I am a mother of two and I want my children to have secure access to
-            food and water and good jobs in the future.
+            As a mother of two, I want my children to have secure access to food
+            and water and good jobs in the future.
           </li>
           <li className="example_li">
-            I am someone who enjoys Singapore’s biodiversity and believe that
+            As someone who enjoys Singapore’s biodiversity, I believe that
             Singapore can better protect our secondary forests.{" "}
           </li>
           <li className="example_li">
-            I am a Singaporean who is struggling with the heat, and worry for
-            the elderly and outdoor workers without aircon who are even more
+            As a Singaporean who is struggling with the heat, I worry for the
+            elderly and outdoor workers without aircon who are even more
             vulnerable to the heat.
           </li>
         </>
       </Collapsible>
       <textarea
         name="introText"
-        placeholder="I am..."
+        placeholder="As a ___, I ___ ..."
         onChange={handleInputChange}
       ></textarea>
 
       <h2>What policy changes are you advocating for?</h2>
-      <span>Pick 1 to 3 options</span>
+      <span>Please only pick up to 3 from the {numPolicies} options </span>
       <p>
         Visit this{" "}
         <a
@@ -104,21 +126,16 @@ const Survey: React.FC<SurveyProps> = ({ onSubmit, onBack }) => {
       </p>
 
       {renderCheckboxes()}
-      <h2 className="top-margin-25px">
-        Elaborate on what specific changes you would like to see!
-      </h2>
-      <textarea
-        name="elaboration"
-        placeholder="Specific changes I'd like to see include..."
-        onChange={handleInputChange}
-      ></textarea>
-
       <h2> Why are you advocating for this particular change?</h2>
       <Collapsible triggerWhenOpen={"▼ Examples"} trigger={"► Examples"}>
         <ul>
           <li className="example_li">
-            This is important to me because I love cycling to work and I would
-            love to have more bike friendly roads!
+            This is important to me because bike- and pedestrian-friendly roads
+            would benefit everyone!
+          </li>
+          <li className="example_li">
+            This is important to me because I believe corporations must be held
+            to higher standards in preventing environmental harms.
           </li>
           <li className="example_li">
             This is important to me because the Singapore I love is one that
@@ -126,31 +143,13 @@ const Survey: React.FC<SurveyProps> = ({ onSubmit, onBack }) => {
             a reasonable standard of living amidst the threat to the economy
             that the climate crisis might bring.
           </li>
-          <li className="example_li">
-            This is important to me because I believe the current carbon tax is
-            insufficient to combat the climate crisis.
-          </li>
         </ul>
       </Collapsible>
 
       <textarea
         name="reason"
-        placeholder="This is important to me because"
+        placeholder="This is important to me because..."
         onChange={handleInputChange}
-      ></textarea>
-
-      <h2>Name you'd like to sign off with</h2>
-      <p>
-        Climate rally does not store any private data, but if you're
-        uncomfortable putting your name here, you may manually insert your name
-        into the drafted email
-      </p>
-      <textarea
-        name="name"
-        id="name_textarea"
-        placeholder="Name"
-        onChange={handleInputChange}
-        autoComplete="[YOUR NAME]"
       ></textarea>
 
       <div id="bottom_buttons">

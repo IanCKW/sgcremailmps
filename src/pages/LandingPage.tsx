@@ -22,6 +22,7 @@ const grcs = getGRCs();
 const LandingPage: React.FC = () => {
   const [phase, setHasClicked] = useState(Phases.SMCGRC);
   const [constituency, setConstituency] = useState("");
+  const [recipients, setRecipients] = useState("");
   const [generatedMessage, setGeneratedMessage] = useState<string | null>(null);
   const surveyRef = useSmoothScrollIntoView(phase === Phases.SURVEY);
   const handleSurveySubmit = (surveyData: SurveyData) => {
@@ -29,7 +30,8 @@ const LandingPage: React.FC = () => {
     const addresses = getEmails(constituency);
     addresses.map((address) => console.log(address));
     setGeneratedMessage(emailDraft);
-    const mailtoLink = `mailto:${addresses.join(",")}
+    setRecipients(addresses.join(","));
+    const mailtoLink = `mailto:${addresses.join(",")}; 
       ?subject=${encodeURIComponent(draftSubject())}
       &body=${encodeURIComponent(emailDraft)}`;
     window.location.href = mailtoLink;
@@ -100,8 +102,10 @@ const LandingPage: React.FC = () => {
               />
               {generatedMessage && (
                 <EmailDraft
-                  message={draftSubject() + generatedMessage}
+                  message={generatedMessage}
+                  recipients={recipients}
                   onMessageChange={setGeneratedMessage}
+                  subject={draftSubject()}
                 />
               )}
             </div>
