@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
         </a>
         <span> | </span>
         <a
-          href="https://heckinunicorn.com/pages/ge2020-email-your-politician-lgbt#top"
+          href="https://github.com/IanCKW/sgcremailmps"
           target="_blank"
           rel="noopener noreferrer"
         >

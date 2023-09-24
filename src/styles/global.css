@@ -62,7 +62,7 @@ h1::before {
   width: 100%;
   text-align: inherit; /* Inherit the text alignment from the parent h1 */
   z-index: 1; 
-  transform: translateX(-50%) translateX(5px) translateZ(-1px);
+  transform: translateX(-50%) translateX(5px) translateZ(-5px);
 }
 
 h1, h2 {
